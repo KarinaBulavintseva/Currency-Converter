@@ -1,0 +1,39 @@
+.currency-titles {
+  flex-grow: 1;
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+  /* border: 1px solid pink; */
+  padding: 0px 0;
+}
+
+.currency-item {
+  display: flex;
+  gap: 10px;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.currency-info {
+  display: flex;
+  gap: 6px;
+}
+
+.currency {
+  display: flex;
+  gap: 5px;
+}
+
+.currency-code {
+  color: #4e4d4d;
+}
+
+.currency-rates {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: end;
+  gap: 35px;
+  flex-grow: 1;
+}

@@ -1,0 +1,17 @@
+.error-message {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-weight: 700;
+}
+
+.content {
+  width: 100%;
+  min-height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

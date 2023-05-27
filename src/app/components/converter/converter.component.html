@@ -1,0 +1,23 @@
+<div class="converter-box">
+  <div class="column">
+    <app-currency-select
+      [selectedValue]="leftSelect"
+      (optionChanged)="handleLeftSelectEvent($event)"
+    ></app-currency-select>
+
+    <app-currency-input
+      [enteredNumbers]="leftInput"
+      (inputValueChanged)="handleLeftInputEvent($event)"
+    ></app-currency-input>
+  </div>
+  <div class="column">
+    <app-currency-select
+      [selectedValue]="rightSelect"
+      (optionChanged)="handleRightSelectEvent($event)"
+    ></app-currency-select>
+    <app-currency-input
+      [enteredNumbers]="rightInput"
+      (inputValueChanged)="handleRightInputEvent($event)"
+    ></app-currency-input>
+  </div>
+</div>

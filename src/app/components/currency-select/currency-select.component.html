@@ -1,0 +1,9 @@
+<select (change)="onChangeOption($event)">
+  <option
+    *ngFor="let option of currency"
+    [value]="option.name"
+    [selected]="option.name === selectedValue"
+  >
+    {{ option.name }}
+  </option>
+</select>

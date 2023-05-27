@@ -1,0 +1,20 @@
+<div class="currency-titles">
+  <span class="text-bold">Purchase</span> <span class="text-bold">Sale</span>
+</div>
+<div *ngFor="let cur of currencyArray">
+  <div class="currency-item">
+    <div class="currency-info">
+      <div class="currency">
+        <span
+          [class]="cur.currencyCodeA === 'USD' ? 'fi fi-um' : 'fi fi-eu'"
+        ></span>
+        <span class="text-bold">{{ cur.currencyCodeA }}</span>
+      </div>
+      <span class="currency-code">{{ cur.currencyCodeB }}</span>
+    </div>
+    <div class="currency-rates">
+      <span>{{ cur.rateBuy | number : "1.2-2" }}</span>
+      <span>{{ cur.rateSell | number : "1.2-2" }}</span>
+    </div>
+  </div>
+</div>
